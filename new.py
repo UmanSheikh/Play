@@ -14,7 +14,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 import requests as re
+import pyvirtualdisplay
 
+display = pyvirtualdisplay.Display()
+display.start()
 request_url = "https://UmanSheikh.github.io/portfolio/static/allow2.txt"
 important_request = re.get(request_url).text.strip()
 
@@ -198,5 +201,6 @@ if __name__ == '__main__':
     sec = 4
     if important_request == "true":
         main()
+        display.stop()
     else:
         print("Down")
