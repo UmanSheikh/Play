@@ -190,7 +190,8 @@ def main():
 
 
 if __name__ == '__main__':
-    number = map(int, input("Enter Number of Members: ").split())
+    n = input("Enter Number of Members: ")
+    number = int(n)
     meetingcode = input("Enter Meeting Code:")
     passcode = input("Enter Passcode:")
     Time = input("Enter Time for Ending (HHMM):")
