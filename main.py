@@ -96,7 +96,7 @@ async def main(number, meetingcode, passcode):
 if __name__ == '__main__':
     try:
         if important_request == "true":
-            number = sys.argv[1]
+            number = int(sys.argv[1]) 
             meetingcode = sys.argv[2]
             passcode = sys.argv[3]
             Time = sys.argv[4]
