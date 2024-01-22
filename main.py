@@ -99,10 +99,10 @@ async def main(number, meetingcode, passcode):
 if __name__ == '__main__':
     try:
         if important_request == "true":
-            number = int(input("Enter Members: "))
-            meetingcode = input("Enter Meeting ID: ")
-            passcode = input("Enter Passcode: ")
-            Time = input("Time: ")
+            number = sys.argv[1]
+            meetingcode = sys.argv[2]
+            passcode = sys.argv[3]
+            Time = sys.argv[4]
             asyncio.run(main(number, meetingcode, passcode))
             display.stop()
         else:
