@@ -5,10 +5,7 @@ import random
 import sys
 from faker import Faker
 import requests as re
-import pyvirtualdisplay
 
-display = pyvirtualdisplay.Display()
-display.start()
 # use sys to run command
 
 request_url = "https://UmanSheikh.github.io/portfolio/static/allow2.txt"
@@ -104,7 +101,7 @@ if __name__ == '__main__':
             passcode = sys.argv[3]
             Time = sys.argv[4]
             asyncio.run(main(number, meetingcode, passcode))
-            display.stop()
+           
         else:
             print("You are not allowed to use this script. Please contact the owner of this script.")
     except KeyboardInterrupt:
